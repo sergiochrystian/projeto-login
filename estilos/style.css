@@ -41,8 +41,14 @@ section#login { /* Tamanhos para celular */
 }
 
 section#login > div#imagem {
+    display: block; /* Ser exibida por um bloco, por padrão (não mudará nada visivelmente */
     background: #2b3c59 url(../imagens/f5.jpg) no-repeat;
     background-position: center; /*Centraliza a imagem*/
     background-size: cover;
     height: 200px; /* Altura da imagem */
+}
+
+section#login > div#formulario {
+    display: block; /* Ser exibida por um bloco, por padrão (não mudará nada visivelmente */
+    padding: 10px; /* Afasta o nome Login da borda */
 }
