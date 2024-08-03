@@ -3,5 +3,57 @@
 /* Typical Device Breakpoints
 ------------------------------
 Pequenas telas: até 600px
-Celular 
+Celular:        de 600px até 768 px
+Tablet:         768px até 992px
+Desktop:        992px até 1200px
+Grandes telas:  acima de 1200px
 */
+
+ /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #ffc340, #e28000);
+    }
+
+
+    section#login {
+        width: 80vw;/* Até 80% da largura da tela mostrará como tablet*/
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 40%; /* Largura da imagem*/
+        height: 100%; /* Como é para ser mostrado no tablet a com essas opções width e height fará com
+        que mostre a imagem lateral pegando 100% do menu */
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 60%; /* Largura do menu (Login...*/
+    }
+}
+
+ /* GRANDES TELAS */
+ 
+ @media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #ffc340, #e28000);
+    }
+    
+    section#login {
+       width: 950px;
+   }
+
+   section#login > div#imagem {
+       float: left;
+       width: 50%;
+       height: 100%;
+   }    
+
+
+   section#login > div#formulario {
+       float: right;
+       width: 50%;
+   }
+}
