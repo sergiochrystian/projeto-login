@@ -55,3 +55,12 @@ section#login > div#formulario {
     display: block; /* Ser exibida por um bloco, por padrão (não mudará nada visivelmente */
     padding: 10px; /* Afasta o nome Login da borda */
 }
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
