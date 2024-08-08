@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+h1 { color: #2b3c59;
+
+}
+
 body, html {
     background-color: #2b3c59;
     height: 100vh;
@@ -35,7 +39,7 @@ section#login { /* Tamanhos para celular */
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 570px;
     border-radius: 20px; /* Menu redondo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -62,5 +66,59 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: gray;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px; /*Faz com que em cima e em baixo tenha 5px e dos lados tenha 0px */
+}
+
+div.campo > label {
+    display: none;    
+}
+
+form > input[type=submit] {
+    display: block; /* O botão ficará em um linha sozinho*/
+    font-size: 1em;
+    width: 100%; /*Não pode ser VW porque é pra acupar a largura do CONTAINER e não da tela inteira */
+    height: 40px;
+    margin-top: 5px;
+    background-color: #f39b03;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ form > input[type=submit]:hover {
+    background-color: #e35104;
+ }
+
+form >a.botao { /* O link da classe botão que está dentro do form */
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: white;
+    color: #2b3c59;
+    border: 1px solid #2b3c59;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #f39b03;
+    color: white;
+    border: white;
+}
+
+form > a.botao > i {
     font-size: 0.8em;
 }

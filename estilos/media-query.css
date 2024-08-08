@@ -16,7 +16,6 @@ Grandes telas:  acima de 1200px
         background-image: linear-gradient(to top, #ffc340, #e28000);
     }
 
-
     section#login {
         width: 80vw;/* Até 80% da largura da tela mostrará como tablet*/
     }
