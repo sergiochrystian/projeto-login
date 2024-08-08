@@ -53,7 +53,7 @@ section#login > div#imagem {
 
 section#login > div#formulario {
     display: block; /* Ser exibida por um bloco, por padrão (não mudará nada visivelmente */
-    padding: 10px; /* Afasta o nome Login da borda */
+    padding: 8px; /* Afasta o nome Login da borda */
 }
 
 div#formulario > h1 {
