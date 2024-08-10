@@ -18,6 +18,7 @@ Grandes telas:  acima de 1200px
 
     section#login {
         width: 80vw;/* Até 80% da largura da tela mostrará como tablet*/
+        height: 330px;
     }
 
     section#login > div#imagem {
@@ -42,6 +43,7 @@ Grandes telas:  acima de 1200px
     
     section#login {
        width: 950px;
+       height: 350px;
    }
 
    section#login > div#imagem {
@@ -62,5 +64,6 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 1.1em;
+    font-size: 1em;
+    margin: 20px 0px; /* Distanciar o parágrafo em cima e embaixo 20px e as laterais 0px */
 }

@@ -33,8 +33,7 @@ section#login { /* Tamanhos para celular */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* Aqui faz com que o menu suba 50% e volte para esqueda 50% assim atingindo o meio da tela */
+  
     overflow: hidden; /* Faz com que a imagem fique com os cantos arredondados. Ou seja, tudo que ficar fora da borda vai ficar escondido.*/
 
     background-color: white;
@@ -43,6 +42,9 @@ section#login { /* Tamanhos para celular */
     border-radius: 20px; /* Menu redondo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    /* Obs.: Sempre que tiver transform ou transistion sempre colocar no final */
+    transform: translate(-50%, -50%);
+    /* Aqui faz com que o menu suba 50% e volte para esqueda 50% assim atingindo o meio da tela */
     transition: width 0.3s, height 0.3s; /* Cria um efeito de transação entre a mudança de uma tela e outra*/
     transition-timing-function: ease; /* Suavisa o efeito*/
 }
@@ -57,7 +59,7 @@ section#login > div#imagem {
 
 section#login > div#formulario {
     display: block; /* Ser exibida por um bloco, por padrão (não mudará nada visivelmente */
-    padding: 8px; /* Afasta o nome Login da borda */
+    padding: 10px; /* Afasta o nome Login da borda */
 }
 
 div#formulario > h1 {
@@ -83,22 +85,30 @@ div.campo > label {
     display: none;
 }
 
+/* ícones, usuário e senha */
 div.campo > i {
     color: white;
-    background-color: black;
-    font-size: 2em;
+    /* background-color: black; */
+    font-size: 1.9em;
     width: 40px;
     padding: 5px;
 }
 
+/* Caixa do usuário e senha */
 div.campo > input {
     background-color: #f39b03;
     font-size: 1em;
-    width: calc(100% - 2px);
+    width: calc(100% - 45px); /* Calc em CSS. Feito uma subtração no tamanho da caixa em relação ao tamanho do ícone lateral */
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-11px); /* Aqui levanta as caixa de email e senha */
+}
+
+div.campo >input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
@@ -107,14 +117,14 @@ form > input[type=submit] {
     width: 100%; /*Não pode ser VW porque é pra acupar a largura do CONTAINER e não da tela inteira */
     height: 40px;
     margin-top: 5px;
-    background-color: #f39b03;
+    background-color: #ffa408;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
- form > input[type=submit]:hover {
+ form > input[type=submit]:hover { /* Ganhar foco - quando tiver digitando a caixa ficará branca */
     background-color: #e35104;
  }
 
@@ -124,20 +134,21 @@ form >a.botao { /* O link da classe botão que está dentro do form */
     font-size: 1em;
     width: 100%;
     height: 40px;
+    padding-top: 5px;
     margin-top: 5px;
     background-color: white;
     color: #2b3c59;
     border: 1px solid #2b3c59;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none; /* Remove a linha embaixo do link*/
 }
 
 form > a.botao:hover {
-    background-color: #f39b03;
+    background-color: #2b3c59;
     color: white;
     border: white;
 }
 
-form > a.botao > i {
-    font-size: 0.8em;
+form > a.botao > span {
+    font-size: 1em;
 }
