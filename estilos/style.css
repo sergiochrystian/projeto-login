@@ -71,6 +71,7 @@ div#formulario > p {
 
 form > div.campo {
     background-color: gray;
+    border: 2px solid gray;
     display: block;
     width: 100%;
     height: 40px;
@@ -82,7 +83,7 @@ div.campo > label {
     display: none;
 }
 
-div.campo > i{
+div.campo > i {
     color: white;
     background-color: black;
     font-size: 2em;
@@ -93,9 +94,8 @@ div.campo > i{
 div.campo > input {
     background-color: #f39b03;
     font-size: 1em;
-    width: calc(100% - 40px); /*CALCULO NA CSS*/
+    width: calc(100% - 2px);
     height: 100%;
-    transform: translateY(-43px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
